@@ -2,7 +2,7 @@
  * wed-dynamiccontenttunnel-nodejs: Web tunnel for page contents, advertisements and more.
  *
  *
- * This project is based off of open source code hosted on github:  https://github.com/nfriedly/node-unblocker
+ * This project is based off of open source code hosted on GitHub:  https://github.com/nfriedly/node-unblocker
  *
  * Original code Released under the terms of the GPL v3
  * 
@@ -27,9 +27,9 @@ function addGa(html) {
             "_gaq.push(['_setAccount', '" + google_analytics_id + "']);",
             "_gaq.push(['_trackPageview']);",
             "(function() {",
-                "  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;",
-            "  var ga = document.createElement('script'); ga.type = 'application/x-httpd-php'; ga.async = true;",
+            "  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;",
             "  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';",
+            "  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);",
             "})();",
             "</script>"
             ].join("\n");
@@ -53,7 +53,7 @@ function googleAnalyticsMiddleware(data) {
 }
 
 var unblockerConfig = {
-    prefix: '/p/',
+    prefix: '/proxy/',
     responseMiddleware: [
         googleAnalyticsMiddleware
     ]
