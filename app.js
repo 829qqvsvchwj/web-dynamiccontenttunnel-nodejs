@@ -1,5 +1,5 @@
 /***************
- * wed-dynamiccontenttunnel-nodejs: Web tunnel for page contents, advertisements and more.
+ * web-dynamiccontenttunnel-nodejs: Web tunnel for page contents, advertisements and more.
  *
  *
  * This project is based off of open source code hosted on GitHub:  https://github.com/nfriedly/node-unblocker
